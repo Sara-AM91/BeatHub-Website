@@ -35,6 +35,26 @@
         height: 33.5938px;
         text-align: center;
       }
+
+      .custom-button {
+        @apply bg-teal-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-teal-700 transition duration-300 ease-in-out;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .sign-in-button {
+        @apply bg-gray-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-gray-700 transition duration-300 ease-in-out;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-top: 5px;
+      }
       /* Custom gradient background */
       .custom-gradient-bg {
         background: linear-gradient(
@@ -71,17 +91,27 @@
         .track-info p {
           @apply text-white;
         }
-        .centered-header {
+        .user-account-section p {
           display: flex;
           justify-content: center;
-          align-items: center;
-          height: 100vh; /* Full viewport height */
+          color: white;
+          margin-bottom: 5px;
+          margin-top: 5px;
+        }
+
+        .user-account-section h2 {
+          @apply text-white text-3xl font-bold text-center mb-4;
+        }
+
+        .centered-header {
+          @apply flex flex-col items-center justify-center text-center;
         }
       }
     </style>
 </head>
 
 <body>
+    <!-- trending-music section -->
     <section class="trending-music custom-gradient-bg" aria-label="Trending Music">
         <header class="custom-heading centered-header">
             <h2>Hear what's trending for free in the BeatHub community</h2>
@@ -185,6 +215,25 @@
                     <p>Conro & Lissa</p>
                 </div>
             </article>
+        </div>
+    </section>
+
+    <!-- user-account section -->
+    <section class="custom-gradient-bg user-account-section" aria-label="User Account Section">
+        <div class="centered-header">
+            <h2>Thanks for listening. Now join in.</h2>
+            <p>Save tracks, follow artists and build playlists. All for free.</p>
+            <button type="button" class="custom-button" tabindex="0" title="Create a BeatHub account"
+                aria-label="Create a BeatHub account">
+                Create account
+            </button>
+            <div class="flex items-center mt-4">
+                <p>Already have an account?</p>
+                <button type="button" class="sign-in-button" tabindex="0" title="Sign in" aria-label="Sign in">
+                    Sign in
+                </button>
+            </div>
+        </div>
         </div>
     </section>
 </body>

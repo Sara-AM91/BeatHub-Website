@@ -7,9 +7,23 @@
     <title>Discover the top streamed music and songs online on BeatHub</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <!-- type="text/tailwindcss" put the images in a row -->
     <style type="text/tailwindcss">
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+
+      body {
+        background: linear-gradient(
+          0deg,
+          #000000 0%,
+          #666666 50%,
+          #383838 100%
+        );
+        color: white;
+        font-family: "Inter", sans-serif;
+      }
+
       .custom-heading {
         @apply text-gray-700 block mb-8 pt-5 text-center;
         font-family: "Inter", sans-serif;
@@ -105,6 +119,13 @@
 
         .centered-header {
           @apply flex flex-col items-center justify-center text-center;
+        }
+        .footer-icons {
+          @apply flex space-x-4 items-center;
+        }
+
+        .footer-icons a {
+          @apply text-white text-xl;
         }
       }
     </style>
@@ -219,7 +240,7 @@
     </section>
 
     <!-- user-account section -->
-    <section class="custom-gradient-bg user-account-section" aria-label="User Account Section">
+    <section class="user-account-section" aria-label="User Account Section">
         <div class="centered-header">
             <h2>Thanks for listening. Now join in.</h2>
             <p>Save tracks, follow artists and build playlists. All for free.</p>
@@ -234,8 +255,33 @@
                 </button>
             </div>
         </div>
-        </div>
     </section>
+    <!-- Footer -->
+    <footer aria-label="Footer section">
+        <div class="border-t border-b border-white flex justify-between items-center px-4 py-8">
+            <div>
+                <p class="text-white mb-2">ABOUT BEATHUB</p>
+                <p class="text-white mb-2">CONTACT US</p>
+                <p class="text-white mb-2">NEWS</p>
+            </div>
+            <div>
+                <p class="text-white mb-2">BEATHUB NEWS</p>
+                <p class="text-white">
+                    Don’t miss a thing, stay up to date with the latest news from us:
+                </p>
+                <input type="email" placeholder="Enter your email" class="mt-2 p-2 rounded bg-gray-200 text-black" />
+            </div>
+        </div>
+        <div class="flex justify-between items-center px-4 py-4 border-t border-white">
+            <p class="text-white">&copy; 2024 BeatHub. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/" class="text-white text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" class="text-white text-xl"><i class="fab fa-youtube"></i></a>
+                <a href="https://x.com/" class="text-white text-xl"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com" class="text-white text-xl"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

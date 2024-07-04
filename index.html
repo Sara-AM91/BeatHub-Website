@@ -6,7 +6,7 @@
     <title>BeatHub-Website</title>
     <!-- Setting up Tailwind CSS via the CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -117,51 +117,34 @@
 
   <body>
     <!--START Header Section-->
-    <div class="container mx-auto">
-      <section class="bg-gray-900 bg-gradient-to-r from-zinc-700 rounded-lg shadow-lg p-8 flex ">
-    
-        <!-- START Album Cover Section -->
-        <div class="flex-col space-y-5 ">
-          <div><img src="/images/BeatHub.png" alt="BeatHub_Logo" class=" w-48 h-auto bg-white p-2 rounded-lg shadow-md"></div>
-          <div><img src="/images/AlbumCover.jpg" alt="Album_Cover" class="w-48 h-auto bg-white p-2 rounded-lg shadow-md"></div>
-          <p class="text-white text-size-adjust mt-2">CONRO - Released May 22, 2024</p>
-        </div>
-        <!-- END Cover Section -->
-    
-        <!-- START Player Controls Section -->
-        <div class="flex-grow ml-8">
-          <h3 class="text-xl text-white font-bold mb-4">LEVEL DAYS</h3>
-          <h4 class="text-lg text-white font-bold mb-4 uppercase">CONRO</h4>
+    <div><img src="/images/BeatHub.png" alt="BeatHub_Logo" class=" w-48 h-auto bg-white p-2 shadow-md"></div>
+    <div class="custom-gradient-bg grid grid-cols-2 gap-4 p-10">
+      <div class="flex flex-col items-center justify-center">
+          <img src="/images/AlbumCover.jpg" alt="ENYO" class="w-64 h-64">
+          <p class="text-white text-size-adjust mt-2">CONRO - Released July 04, 2024</p>
+      </div>
+      <div class="flex flex-col items-start justify-center">
+          <h2 class="text-3xl font-bold">LEVEL DAYS</h2>
+          <h3 class="text-xl mt-2">CONRO</h3>
+          <div class="mt-4 space-x-4">
+              <button class="px-4 py-2 bg-blue-500 text-white rounded">LISTEN NOW</button>
+              <button class="px-4 py-2 bg-green-500 text-white rounded">SHARE</button>
           </div>
-        <!-- END Player Controls Section -->
-        
-    
-        <!--START Listner Section -->
-          <div class ="flex space-x-4">
-            <div ><img src="/images/listner1.jpg" alt="Artist Profile Picture" class="w-12 h-12 rounded-full mb-4 shadow-md border border-gray-800"></div>
-            <div><img src="/images/listner2.jpg" alt="Artist Profile Picture" class="w-12 h-12 rounded-full mb-4 shadow-md border border-gray-800"></div>
-          </div>
-        <!--END Listner Section -->
-    
-          <div class="flex space-x-4 text-white">
-            <div class=""><button class="hover:bg-sky-700">► Listen Now</button></div>
-            <button class=" hover:bg-sky-700"> 📤Share</button>
-          </div>
-      </section>
-       <!--END Header Section-->
-    </div> <!-- Missing closing div tag added here -->
+      </div>
+    </div>
+    <!--END Header Section-->
     
       <!--START SearchBar Section-->
-      <section class="bg-gray-900 bg-gradient-to-r from-zinc-700 rounded-lg shadow-lg p-10 flex">
-           <input type="search" placeholder="Search for Artist, Bands, Tracks, Podcasts" class="bg-gray-700 text-white rounded-full pl-4 pr-10 py-2 w-full focus:outline-none focus:ring focus:border-blue-300 flex p-8">
-            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white ">
-              <button type="submit" class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-gray-700 rounded-full border border-white hover:bg-blue-800 focus:ring-4">
-                <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                </svg>Search
-            </button>
-            </button>
-          </section>
+      <section class="bg-gray-900 custom-gradient-bg from-zinc-700 shadow-lg p-10 flex">
+        <input type="search" placeholder="Search for Artist, Bands, Tracks, Podcasts" class="bg-gray-700 text-white rounded-full pl-4 pr-10 py-2 w-full focus:outline-none focus:ring focus:border-blue-300 flex p-8">
+        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white ">
+          <button type="submit" class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-gray-700 rounded-full border border-white hover:bg-blue-800 focus:ring-4">
+            <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>Search
+          </button>
+        </button>
+      </section>
           <!--END SearchBar Section-->
     
         <!-- trending-music section -->

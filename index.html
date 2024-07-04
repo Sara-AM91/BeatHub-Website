@@ -8,36 +8,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-  <body class="bg-gray-800 flex items-center justify-center h-screen">
-      <div class="bg-gray-900 rounded-lg shadow-lg p-8 flex">
-        <!-- Album Cover Section -->
-        <div class="flex-none">
-          <img src="/images/BeatHub.png" alt="LEVEL DAYS Album Cover" class="block w-48 h-auto bg-white p-2 rounded-lg shadow-md">
-          <p class="text-white mt-2">CONRO - Released May 22, 2020</p>
+    <!--START Header Section-->
+    <div class="container mx-auto" >
+      <section class="bg-gray-900 bg-gradient-to-r from-zinc-700 rounded-lg shadow-lg p-8 flex ">
+
+        <!-- START Album Cover Section -->
+        <div class="flex-col space-y-5 ">
+          <div><img src="/images/BeatHub.png" alt="BeatHub_Logo" class=" w-48 h-auto bg-white p-2 rounded-lg shadow-md"></div>
+          <div><img src="/images/AlbumCover.jpg" alt="Album_Cover" class="w-48 h-auto bg-white p-2 rounded-lg shadow-md"></div>
+          <p class="text-white text-size-adjust mt-2">CONRO - Released May 22, 2024</p>
         </div>
-        <!-- Player Controls Section -->
+        <!-- END Cover Section -->
+
+        <!-- START Player Controls Section -->
         <div class="flex-grow ml-8">
           <h3 class="text-xl text-white font-bold mb-4">LEVEL DAYS</h3>
-          <h4 class="text-lg text-gray-400 mb-6">CONRO</h4>
+          <h4 class="text-lg text-white font-bold mb-4 uppercase">CONRO</h4>
+        <!-- END Player Controls Section -->
+        
+
+        <!--START Listner Section -->
           <div class ="flex space-x-4">
-            <div><img src="/images/listner1.jpg" alt="Artist Profile Picture" class="w-12 h-12 rounded-full mb-4 shadow-md border border-gray-800"></div>
+            <div ><img src="/images/listner1.jpg" alt="Artist Profile Picture" class="w-12 h-12 rounded-full mb-4 shadow-md border border-gray-800"></div>
             <div><img src="/images/listner2.jpg" alt="Artist Profile Picture" class="w-12 h-12 rounded-full mb-4 shadow-md border border-gray-800"></div>
           </div>
+        <!--END Listner Section -->
 
-          <button class="flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-300 rounded-full transition ease-in duration-200 text-white shadow-md mb-4">
-            ► LISTEN NOW
-          </button>
-          <button class="flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 focus:outline-none focus:ring focus:border-green-300 rounded-full transition ease-in duration-200 text-white shadow-md">
-            📤 SHARE
-          </button>
-        </div>
+          <div class="flex space-x-4 text-white">
+            <div class=""><button class="hover:bg-sky-700">► Listen Now</button></div>
+            <button class=" hover:bg-sky-700"> 📤Share</button>
+          </div>
+      </section>
+       <!--END Header Section-->
+
+      <!--START SearchBar Section-->
+      <section class="bg-gray-900 bg-gradient-to-r from-zinc-700 rounded-lg shadow-lg p-10 flex">
+           <input type="search" placeholder="Search for Artist, Bands, Tracks, Podcasts" class="bg-gray-700 text-white rounded-full pl-4 pr-10 py-2 w-full focus:outline-none focus:ring focus:border-blue-300 flex p-8">
+            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white ">
+              <button type="submit" class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-gray-700 rounded-full border border-white hover:bg-blue-800 focus:ring-4">
+                <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>Search
+            </button>
+            </button>
+          </section>
+          <!--END SearchBar Section-->
+        
+      </div>
     </div>
   </body>
 </html>
